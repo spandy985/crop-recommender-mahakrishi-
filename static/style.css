@@ -1,0 +1,121 @@
+/* Import modern font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+
+  /* Gradient Background */
+  background: linear-gradient(135deg, #2e7d32, #81c784);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 400px;
+  padding: 35px;
+
+  /* Glass Effect */
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  color: white;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+h1 {
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+label {
+  display: block;
+  margin: 12px 0 6px;
+  font-weight: 400;
+  text-align: left;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+input:focus {
+  box-shadow: 0 0 10px rgba(255,255,255,0.6);
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+
+  background: white;
+  color: #2e7d32;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+/* Result Card */
+.card {
+  margin-top: 25px;
+  padding: 20px;
+  border-radius: 16px;
+  background: white;
+  color: #2e7d32;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+  animation: slideUp 0.5s ease;
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.crop {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+li {
+  margin: 8px 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
